@@ -1,0 +1,63 @@
+.section {
+  padding: 5vh 5vw;
+  animation: var(--animation-fade-in);
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.title {
+  margin: 3rem 0;
+  font-family: var(--title-font);
+  font-size: 6.4rem;
+  font-weight: 700;
+}
+
+.image {
+  width: 100%;
+  border-radius: 1.2rem;
+}
+
+.paragraph p {
+  line-height: 1.8em;
+}
+
+.containerButton {
+  margin: 3rem 0 5rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.button {
+  font-size: 2.88rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  background-color: var(--button-background);
+  padding: 2rem 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: var(--transition);
+}
+
+.button:hover {
+  opacity: .85;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  transition: var(--transition);
+}
+
+.button:hover .arrow {
+  transform: translateX(5px);
+}
+
+@media screen and (max-width: 574px) {
+  .section {
+    padding: 2.5rem 2rem;
+  }
+}
